@@ -1,9 +1,12 @@
 {
   "name": "timercli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A command line timer that speaks",
   "repository": {},
   "main": "main.js",
+  "dependencies": {
+    "ms": "^0.7.2"
+  },
   "scripts": {
     "test": "test"
   },

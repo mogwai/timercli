@@ -58,3 +58,5 @@ typings/
 
 # ===== End Node.gitignore =====
 
+
+.DS_STORE
