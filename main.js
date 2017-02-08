@@ -2,11 +2,12 @@ const readline = require('readline');
 const ms = require('ms')
 
 console.log("Nodejs Timer - Started\n")
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-    
+
 (function createNewTimer() {
     rl.question("What would you like to call the timer\n", (name) => {
         let timer = {
