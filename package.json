@@ -1,0 +1,12 @@
+{
+  "name": "timercli",
+  "version": "1.0.0",
+  "description": "A command line timer that speaks",
+  "repository": {},
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Harry Coultas Blum",
+  "license": "CC-BY-NC-SA-4.0"
+}
