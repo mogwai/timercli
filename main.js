@@ -1,5 +1,7 @@
 #! /usr/bin/env node
+'use strict'
 const readline = require('readline');
+const say = require('say')
 const ms = require('ms')
 
 console.log("Nodejs Timer - Started\n")
@@ -18,8 +20,7 @@ const rl = readline.createInterface({
         rl.question("How long should the timer be?\n", (time) => {
             timer.time = parseTime(time)
             setTimeout(function () {
-                spawn = require('child_process').spawn
-                spawn('say', [timer.name])
+                say.speak(timer.name)
                 console.log(`Timer ${timer.name} is finished`)
             }, timer.time)
             createNewTimer();
