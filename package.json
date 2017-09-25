@@ -6,6 +6,7 @@
   "main": "main.js",
   "dependencies": {
     "ms": "^0.7.2",
+    "pretty-ms": "^3.0.1",
     "say": "^0.11.0"
   },
   "scripts": {
