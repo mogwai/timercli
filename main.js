@@ -66,13 +66,17 @@ function timerCommand(args) {
         timers[name] = { time: time, start: new Date() }
         setTimeout(() => {
             if (timers[name]) {
+                delete timers[name]
                 console.log('Timer Finished: ' + name + " " + currentTime())
                 say.speak(name)
             }
         }, time)
         console.log('Timer Started: ' + name + " " + currentTime())
     } else {
-        console.log('Invalid Command')
+        if (timers[name])
+            console.log('Timer already exists with that name')
+        else
+            console.log('Invalid Command')
     }
 }
 
