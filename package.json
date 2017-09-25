@@ -2,19 +2,29 @@
   "name": "timercli",
   "version": "1.0.7",
   "description": "A command line timer that speaks",
-  "repository": {},
   "main": "main.js",
   "dependencies": {
     "ms": "^0.7.2",
     "pretty-ms": "^3.0.1",
     "say": "^0.11.0"
   },
-  "scripts": {
-    "test": "test"
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lengk/timercli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lengk/timercli/issues"
   },
   "author": "Harry Coultas Blum",
   "license": "CC-BY-NC-SA-4.0",
   "bin": {
     "timercli": "main.js"
-  }
+  },
+  "keywords": [
+    "timer",
+    "cli",
+    "stopwatch",
+    "commandline"
+  ]
 }
