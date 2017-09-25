@@ -45,7 +45,7 @@ function timerCommand(args) {
         for (var k in timers) {
             printTimer(k)
         }
-        return 
+        return
     }
     if (value == "cancel") {
         if (timers[name]) {
@@ -58,6 +58,8 @@ function timerCommand(args) {
         args[0] = ''
         args[1] = ''
         let time = args.join(' ')
+        if (!time.trim())
+            return console.log('Please enter a time')
         time = parseTime(time)
         if (!time)
             return console.log('Invalid time')
@@ -108,6 +110,7 @@ function stopwatchCommand(args) {
             console.log('ERROR: Cannot find stopwatch ' + name)
         }
     } else if (subcommand == "list") {
+        console.log('\n Running Stopwatches \n')
         for (var k in stopwatches) {
             printStopWatch(k)
         }
